@@ -1,8 +1,11 @@
 name: Build APK Release
+
 on:
   push:
-    tags:
-      - '*'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 jobs:
   build:
     name: Build APK
